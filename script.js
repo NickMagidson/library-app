@@ -1,4 +1,4 @@
-let myLibrary = [];
+let myLibrary = []; // Add a few book objects to array to test display
 
 class Book {
     constructor(title, author, pages, read) {
@@ -21,6 +21,12 @@ function bookRemoval() {
 
 }
 
+// Creates DOM element for render()
+function createBook() {
+
+}
+
+
 // Loops through array and displays each book in own card.
 function render() {
     //display
@@ -28,11 +34,6 @@ function render() {
     // forEach method
 
     //for loop to iterate through myLibrary
-}
-
-// Creates DOM element for render()
-function createBook(x) {
-
 }
 
 
