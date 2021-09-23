@@ -14,6 +14,9 @@ function addBookToLibrary() {
 
 }
 
+function bookRemoval() {
+
+}
 
 
 // const book1 = new Books('Invincible', 'Robert Kirkman', 400, "I've read it!");
