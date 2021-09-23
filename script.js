@@ -1,7 +1,5 @@
 let myLibrary = [];
 
-
-
 class Book {
     constructor(title, author, pages, read) {
     this.title = title
@@ -13,15 +11,41 @@ class Book {
     }
 }
 
-
 // Takes user input and store new book object into array
 function addBookToLibrary() {
 
 }
 
+// Remove book button
 function bookRemoval() {
 
 }
+
+// Loops through array and displays each book in own card.
+function render() {
+    //display
+    //books
+    // forEach method
+
+    //for loop to iterate through myLibrary
+}
+
+// Creates DOM element for render()
+function createBook(x) {
+
+}
+
+
+// Event listener buttons for create new book, add new book, and remover pop up.
+
+
+
+
+
+
+
+
+
 
 
 // const book1 = new Books('Invincible', 'Robert Kirkman', 400, "I've read it!");
