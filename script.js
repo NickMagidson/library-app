@@ -1,3 +1,16 @@
+// Event listener buttons for create new book, add new book, and remove pop up.
+const addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click', addBookToLibrary());
+
+const newBookBtn = document.getElementById('newBtn');
+newBookBtn.addEventListener('click', popUpForm.style.display = 'block');
+
+const popUpForm = document.getElementById('form');
+const closePopUp = document.querySelector('close');
+closePopUp.addEventListener('click', popUpForm.style.display = 'none');
+
+
+
 let myLibrary = []; // Add a few book objects to array to test display
 
 class Book {
@@ -29,15 +42,19 @@ function createBook() {
 
 // Loops through array and displays each book in own card.
 function render() {
-    //display
-    //books
-    // forEach method
-
+    const display = document.getElementById('Library-container');
+    const books = document.querySelectorAll('.book');
+    books.forEach(book => display.removeChild(book));
+    
     //for loop to iterate through myLibrary
+    for (let i = 0; i < myLibrary; i++) {
+        createBook(myLibrary[i]);
+        
+    }
 }
 
 
-// Event listener buttons for create new book, add new book, and remover pop up.
+//Book DOM elements for render()
 
 
 
