@@ -20,8 +20,6 @@ class Book {
     this.author = author
     this.pages = pages
     this.read = read
-    // this.info = function() {
-    //     return (title + ' by ' + author + ', ' + pages + ' pages' + ', ' + read)
     }
 }
 
@@ -83,8 +81,19 @@ function createBook(item) {
 
     library.appendChild(bookDiv);
 
+    removeBtn.addEventListener('click', () => {
+        myLibrary.splice(myLibrary.indexOf(item),1);
+        // setData()
+        render();
+    });
 
-}
+    readBtn.addEventListener('click', () => {
+        item.read = !item.read;
+        // setData()
+        render();
+    });
+
+};
 
 
 // Loops through array and displays each book in own card.
