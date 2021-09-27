@@ -98,7 +98,4 @@ function createBook(item) {
         // setData()
         render();
     });
-
 };
-
-
