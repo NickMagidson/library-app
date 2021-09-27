@@ -19,7 +19,7 @@ class Book {
     }
 }
 
-let myLibrary = []; // Add a few book objects to array to test display
+let myLibrary = [];
 let newBook;
 
 // Takes user input and store new book object into array
