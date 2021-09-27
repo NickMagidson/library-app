@@ -1,17 +1,18 @@
 // Event listener buttons for create new book, add new book, and remove pop up.
-const addBtn = document.getElementById('addBtn');
+const addBtn = document.querySelector('addBtn');
 addBtn.addEventListener('click', addBookToLibrary());
 
-const newBookBtn = document.getElementById('newBtn');
+const newBookBtn = document.querySelector('newBtn');
 newBookBtn.addEventListener('click', popUpForm.style.display = 'block');
 
 const popUpForm = document.getElementById('form');
-const closePopUp = document.querySelector('close');
+const closePopUp = document.getElementsByTagName('span')[0];
 closePopUp.addEventListener('click', popUpForm.style.display = 'none');
 
 
 
 let myLibrary = []; // Add a few book objects to array to test display
+let newBook;
 
 class Book {
     constructor(title, author, pages, read) {
@@ -26,7 +27,13 @@ class Book {
 
 // Takes user input and store new book object into array
 function addBookToLibrary() {
+    event.preventDefault();
+    popUpForm.style.display = 'none';
 
+    newBook = new Book(title, author, pages, read);
+    myLibrary.push(newBook);
+    render();
+    FormData.reset();
 }
 
 // Remove book button
