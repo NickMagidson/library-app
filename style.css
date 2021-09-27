@@ -2,7 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
     background: #2d4059;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
 
 }
@@ -20,4 +20,22 @@ body {
 .title {
     color: aliceblue;
     font-size: 40px;
+}
+
+#newBtn-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#newbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: solid 3px black;
 }
